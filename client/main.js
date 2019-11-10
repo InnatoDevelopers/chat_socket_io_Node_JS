@@ -1,7 +1,7 @@
 /* Indicamos la ruta donde se encuetra el socket y con la propiedad
     forceNew indicamos que vamos a forzar la conexión
 */
-var socket = io.connect('http://192.168.100.48:6677',{'forceNew':true});
+var socket = io.connect('http://localhost:3300',{'forceNew':true});
 socket.on('messages',(data)=>{
     console.log(data);
     render(data);
